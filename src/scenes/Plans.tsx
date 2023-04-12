@@ -69,7 +69,7 @@ type Props = {
 };
 
 const Plans = ({ setSelectedPage }: Props) => {
-  const buttonRef = useRef();
+  const buttonRef = useRef<HTMLDivElement>(null);
 
   return (
     <section
@@ -81,7 +81,7 @@ const Plans = ({ setSelectedPage }: Props) => {
         <ChevronLeftIcon
           className="h-10 w-10  hover:text-primary-300"
           onClick={() => {
-            buttonRef.current.scrollLeft -= 400;
+            buttonRef.current? buttonRef.current.scrollLeft -= 400 : {};
           }}
         />
       </div>
@@ -132,7 +132,7 @@ const Plans = ({ setSelectedPage }: Props) => {
         <ChevronRightIcon
           className=" hover:text-primary-300 hover:cursor-pointer  h-10 w-10"
           onClick={() => {
-            buttonRef.current.scrollLeft += 400;
+            buttonRef.current?buttonRef.current.scrollLeft += 400:{};
           }}
         />
       </div>
