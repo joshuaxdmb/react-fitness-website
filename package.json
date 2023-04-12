@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "buildvite": "tsc && vite build",
-    "build":"react-scripts bild",
+    "build": "tsc && vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
