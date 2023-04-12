@@ -1,11 +1,13 @@
 {
   "name": "react-fitness-website",
   "private": true,
+  "homepage": "https://joshuaxdmb.github.io/react-fitness-website/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "buildvite": "tsc && vite build",
+    "build":"react-scripts bild",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
